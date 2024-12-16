@@ -1,0 +1,69 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure modal is on top */
+    backdrop-filter: blur(5px); /* Optional: Add a blur effect to the background */
+}
+
+.modal-content {
+    background: white;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* More rounded corners */
+    max-width: 600px; /* Increased max-width for larger modal */
+    width: 90%; /* Responsive width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px; /* Slightly adjusted position */
+    right: 15px; /* Slightly adjusted position */
+    background: none;
+    border: none;
+    font-size: 24px; /* Increased font size for visibility */
+    color: #333; /* Darker color for better contrast */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.modal-close:hover {
+    color: #e74c3c; /* Change color on hover */
+}
+
+/* Optional: Style for modal header */
+.modal-header {
+    font-size: 20px; /* Header font size */
+    margin-bottom: 20px; /* Space below header */
+    font-weight: bold; /* Bold text */
+}
+
+/* Optional: Style for modal footer */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Optional: Style for modal buttons */
+.modal-footer button {
+    margin-left: 10px; /* Space between buttons */
+    background-color: #4CAF50; /* Green background for action buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.modal-footer button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,63 @@
+/* AchievementsUpload.css */
+.achievements-upload-container {
+  padding: 20px;
+  background-color: #242424;
+  max-width: calc(100% - 250px); /* Adjust width based on sidebar width */
+  width: calc(100% - 250px);
+  margin-left: 280px;
+  color: #ffffff;
+}
+
+.achievements-upload-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #76ff03;
+}
+
+.achievements-upload-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  background-color: #333333;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #444; /* Add a border for better visibility */
+  color: #ffffff;
+}
+
+.input-field .MuiInputBase-input,
+.input-field .MuiSelect-select {
+  color: #ffffff;
+}
+
+.input-field .MuiInputLabel-root {
+  color: #b3b3b3;
+}
+
+.file-input {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.upload-button {
+  background-color: #76ff03;
+  color: #121212;
+  cursor: pointer;
+  transition: none; /* Remove animation */
+  box-shadow: none; /* Remove shadow effect */
+  text-transform: none; /* Keep text as entered */
+}
+
+.upload-button:hover {
+  background-color: #64dd17;
+}
+
+.upload-message {
+  color: #76ff03;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+}

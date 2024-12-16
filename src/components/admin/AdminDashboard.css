@@ -1,0 +1,142 @@
+/* Main Event Header */
+.events-header {
+    font-size: 36px;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-in-out forwards;
+    letter-spacing: 1.5px; /* Add spacing for elegance */
+    font-family: 'Roboto', sans-serif; /* Consistent font style */
+}
+
+/* Container Background and Text Styling */
+.container {
+    background-color: #1e1e1e;
+    color: #f0f0f0; /* Slightly lighter text for better contrast */
+    min-height: 100vh;
+    width: calc(100vw - 250px); /* Keep sidebar width calculation */
+    margin-left: 220px; /* Adjusted for left margin */
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px; /* Increased padding for more spacing */
+    box-sizing: border-box; /* Ensure padding is accounted for */
+    transition: margin-left 0.3s ease; /* Smooth transition for side menu interaction */
+}
+
+/* Paper/Card Styling */
+.MuiPaper-root {
+    background-color: #2a2a2a; /* Darker background for card */
+    border-radius: 12px;
+    color: #0dec1c; /* Adjusted text color for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding: 25px; /* Added more padding for breathing space */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    margin: 20px 0; /* Added margin between cards */
+}
+
+/* Hover Effect on Paper/Card */
+.MuiPaper-root:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styling */
+.MuiButton-contained {
+    background-color: #43a047;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 12px 25px; /* More padding for better button size */
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    animation: buttonPulse 1.5s infinite;
+    cursor: pointer;
+    text-transform: uppercase; /* Make button text stand out */
+}
+
+/* Hover Effect on Button */
+.MuiButton-contained:hover {
+    background-color: #388e3c;
+    transform: translateY(-5px); /* More pronounced hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Grid Container Animation */
+.MuiGrid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    animation: fadeInUp 0.8s ease-in;
+    padding-bottom: 50px; /* Added padding for spacing at the bottom */
+}
+
+/* Sidebar Adjustments */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #34495e, #2c3e50); /* Reversed gradient for better flow */
+    padding: 25px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    transition: width 0.3s ease; /* Smooth transition for responsive menus */
+}
+
+/* Sidebar Hover Effect */
+.sidebar:hover {
+    width: 260px; /* Slight expansion on hover */
+}
+
+/* Animations */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade In from Bottom */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header Slide In from Top */
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button Pulse Effect */
+@keyframes buttonPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

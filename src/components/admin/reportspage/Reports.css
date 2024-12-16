@@ -1,0 +1,103 @@
+/* Styles for Reports Page */
+.container{
+  max-width: calc(100% - 270px); /* Adjusted for sidebar width */
+  width: calc(100% - 290px);
+  margin-left:280px;
+}
+.reports-container {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+.reports-heading {
+  color: #ffcc33;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.chart-container {
+  margin: 40px 0;
+  padding: 25px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chart-heading {
+  color: #ffcc33;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.table-container {
+  margin-left: 280px; /* Moves table to the right, adjusts for sidebar */
+  width: calc(100% - 300px); /* Adjust table width considering the sidebar */
+  padding: 20px;
+  margin-left: 200px;
+  box-sizing: border-box;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-y: auto; /* Allows vertical scrolling if needed */
+  max-height: 400px; /* Set a maximum height to ensure scrolling */
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #444;
+  color: #f0a500;
+}
+
+.data-table td {
+  background-color: #333;
+}
+
+/* Custom scrollbar styles */
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #ffcc33;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+
+/* Button styles */
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* General layout adjustment */
+body {
+  margin: 0;
+  padding: 0;
+}

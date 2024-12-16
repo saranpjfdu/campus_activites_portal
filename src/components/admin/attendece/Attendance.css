@@ -1,0 +1,123 @@
+/* Styles for Attendance Page */
+.attendance-container {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    max-width: calc(100% - 250px); /* Adjust width based on sidebar width */
+    width: calc(100% - 250px); 
+    margin-left:280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .attendance-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-container label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+  
+  #eventDropdown {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ffcc00;
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ffcc00;
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .attendance-table th, .attendance-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  
+  .attendance-table th {
+    background-color: #404040;
+    color: #ffcc00;
+  }
+  
+  .attendance-table td {
+    background-color: #2e2e2e;
+  }
+  
+  .attendance-table tr:nth-child(even) td {
+    background-color: #333;
+  }
+  
+  .attendance-table input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .attendance-submit-btn, .attendance-export-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .attendance-submit-btn:hover, .attendance-export-btn:hover {
+    background-color: #e6b800;
+  }
+  
+  .attendance-export-btn {
+    background-color: #ff9933;
+  }
+  
+  .attendance-export-btn:hover {
+    background-color: #e68a00;
+  }
+  
+  .attendance-submit-btn:active, .attendance-export-btn:active {
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 768px) {
+    .attendance-container {
+      padding: 20px;
+    }
+  
+    .attendance-table th, .attendance-table td {
+      padding: 8px 10px;
+    }
+  
+    .attendance-submit-btn, .attendance-export-btn {
+      padding: 8px 15px;
+    }
+  }
+  

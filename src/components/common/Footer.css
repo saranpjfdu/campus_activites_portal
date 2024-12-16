@@ -1,0 +1,17 @@
+footer {
+    background-color: #282c34; /* Dark background */
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Add some padding for spacing */
+    position: fixed; /* Fix the footer at the bottom */
+    width: 100%; /* Make it full width */
+    bottom: 0; /* Stick to the bottom of the page */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    font-size: 14px; /* Font size adjustment */
+  }
+  
+  footer p {
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Change font style */
+  }
+  

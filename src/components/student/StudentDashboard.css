@@ -1,0 +1,52 @@
+
+/* Adjusted Student Dashboard */
+.student-dashboard {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  width: calc(100vw - 250px); /* Adjusted to account for sidebar */
+  margin-left: 250px; /* Start content after sidebar */
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  padding: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+.card h3 {
+  color: #00FF00; /* Green heading */
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.card button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}

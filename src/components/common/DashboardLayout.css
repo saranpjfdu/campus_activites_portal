@@ -1,0 +1,146 @@
+/* Main dashboard layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Gradient for depth */
+  color: #ecf0f1;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+/* Main container for sidebar and content */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #2c3e50, #34495e); /* Darker gradient for sidebar */
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
+  overflow-y: auto; /* Add scrolling within the sidebar if content overflows */
+  height: 100vh; /* Full height */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Sidebar list item */
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 12px;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.4s, color 0.4s; /* Removed transform property */
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4); /* Subtle shadow on hover */
+}
+
+.sidebar ul li a.active {
+  background-color: #2980b9; /* Active state with a solid color */
+  color: #fff;
+}
+
+/* Content area styling */
+.content {
+  margin-left: 250px; /* Account for the sidebar width */
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #17202a; /* Dark background for content */
+  color: #ecf0f1;
+  border-left: 1px solid #34495e; /* Subtle divider between sidebar and content */
+  height: 100vh; /* Full height for content */
+  overflow-y: auto; /* Add scrolling within the content area if needed */
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 32px; /* Larger, bold heading */
+  padding-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  color: #3498db;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Uppercase for a striking effect */
+}
+
+.content h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #3498db;
+}
+
+.content p {
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #bdc3c7;
+}
+
+/* Button styling */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(41, 128, 185, 0.5); /* Shadow for hover effect */
+}
+
+button:focus {
+  outline: none;
+  background-color: #21618c;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add animation for smoother transitions when navigating */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sidebar ul li a {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}

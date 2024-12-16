@@ -1,0 +1,108 @@
+/* Basic styling */
+.achievements-page {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  justify-content: flex-start; /* Align items to the top */
+  overflow: hidden; /* Ensure content stays within viewport */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px;
+  margin-left: 250px;
+}
+
+.toggle-button {
+  background-color: #ffcc33;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #1e1e1e;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 50px;
+  margin: 0 15px; /* Add more space between the buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 190px; /* Fixed button width to ensure both buttons are equal */
+}
+
+.toggle-button.active {
+  background-color: #ffaa33;
+}
+
+.toggle-button:hover {
+  background-color: #ffaa33;
+  transform: scale(1.05); /* Slight hover effect to increase button size */
+}
+
+/* Container wrapping the content */
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100vw - 250px); /* Full width minus sidebar */
+  height: calc(100vh - 60px); /* Full height minus padding/margins */
+  margin-left: 200px; /* Adjust for sidebar width */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Hide scrollbar but still allow scrolling */
+.achievements-container::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar */
+}
+
+.achievement-card {
+  background-color: #2e2e2e;
+  padding: 20px;
+  margin-left: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin-bottom: 30px; /* Space between cards */
+}
+
+.achievement-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc33;
+  text-align: center; /* Center align title */
+}
+
+.achievement-subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #ffcc33;
+}
+
+.paragraph-text {
+  color: #d1d1d1;
+}
+
+/* Wrapping image in a container */
+.achievement-image-container {
+  width: 100%;
+  height: 400px; /* Adjust height for images to be proportional */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container without distortion */
+  border-radius: 10px;
+}
